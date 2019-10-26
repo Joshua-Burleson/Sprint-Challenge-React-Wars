@@ -14,12 +14,12 @@ const CharacterCard = props => {
     return (
         <Character>
             <h2>{props.character.name}</h2>
-            <h3>Species: {species}</h3>
-            <h4>Physical Description:</h4>
+            <h2>Species: {species}</h2>
+            <h3>Physical Description</h3>
             <CharacterList>
                 <li>Skin Color: {props.character.skin_color}</li>
                 <li>Height: {props.character.height}</li>
-                <li>Mass: {props.character.hair_mass}</li>
+                <li>Mass: {props.character.mass}</li>
                 <li>Hair: {props.character.hair_color}</li>
                 <li>Eyes: {props.character.eye_color}</li>
             </CharacterList>
