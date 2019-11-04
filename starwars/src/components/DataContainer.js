@@ -21,7 +21,7 @@ const DataContainer = (props) => {
     <div className="data-container">
       <Pagination page = {page} setPage = {setPage}/>
       <CharacterContainer>
-        {characters && characters.map(char => <CharacterCard character={char} />)}
+        {characters && characters.map(char => <CharacterCard key={char.name} character={char} />)}
       </CharacterContainer>
     </div>
   );
